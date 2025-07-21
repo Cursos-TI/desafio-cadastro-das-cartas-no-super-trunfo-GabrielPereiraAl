@@ -8,7 +8,7 @@ int main() {
     int populacao1;
     float area1;
     float pib1;
-    int pontosTuristico1;
+    int pontos_turistico1;
 
     // Variáveis da segunda cidade
     char estado2;
@@ -17,7 +17,7 @@ int main() {
     int populacao2;
     float area2;
     float pib2;
-    int pontosTuristico2;
+    int pontos_turistico2;
 
     // Cadastro da carta 1
     printf("\n++++ Olá, bem-vindo ao Super Trufo! ++++\n\nCadastre a primeira carta.\n\n");
@@ -41,7 +41,7 @@ int main() {
     scanf("%f", &pib1);
 
     printf("Digite quantos pontos turísticos a cidade possui: ");
-    scanf("%d", &pontosTuristico1);
+    scanf("%d", &pontos_turistico1);
 
     // Apresentando os dados da carta 1
     printf("\n\n==================== Carta 1 ====================\n");
@@ -51,7 +51,7 @@ int main() {
     printf("População: %d\n", populacao1);
     printf("Área: %.2f Km²\n", area1);
     printf("PIB: R$%.2f bilhões de reais\n", pib1);
-    printf("Pontos Turísticos: %d\n", pontosTuristico1);
+    printf("Pontos Turísticos: %d\n", pontos_turistico1);
     printf("=================================================");
 
     // Cadastro da carta 2
@@ -76,7 +76,7 @@ int main() {
     scanf("%f", &pib2);
 
     printf("Digite quantos pontos turísticos a cidade possui: ");
-    scanf("%d", &pontosTuristico2);
+    scanf("%d", &pontos_turistico2);
 
     // Apresentando os dados da carta 2
     printf("\n\n==================== Carta 2 ====================\n\n");
@@ -86,7 +86,7 @@ int main() {
     printf("População: %d\n", populacao2);
     printf("Área: %.2f Km²\n", area2);
     printf("PIB: R$%.2f bilhões de reais\n", pib2);
-    printf("Pontos Turísticos: %d\n", pontosTuristico2);
+    printf("Pontos Turísticos: %d\n", pontos_turistico2);
     printf("\n=================================================");
     return 0;
 }
