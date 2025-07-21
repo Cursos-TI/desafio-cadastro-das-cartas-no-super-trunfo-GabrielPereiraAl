@@ -22,10 +22,10 @@ int main() {
     // Cadastro da carta 1
     printf("\n++++ Olá, bem-vindo ao Super Trufo! ++++\n\nCadastre a primeira carta.\n\n");
 
-    printf("Digite a inicial do nome do estado: ");
+    printf("Digite uma letra entre A e H para representar o estado: ");
     scanf(" %c", &estado1);
 
-    printf("Digite um código para a carta (exemplo: 01,12,33...): ");
+    printf("Digite um código para carta entre 01 a 04: ");
     scanf("%s", codigo_carta1);
 
     printf("Digite o nome da cidade: ");
@@ -57,10 +57,10 @@ int main() {
     // Cadastro da carta 2
     printf("\n\nCadastre a carta 2.\n\n");
 
-    printf("Digite a inicial do nome do estado: ");
+    printf("Digite uma letra entre A e H para representar o estado: ");
     scanf(" %c", &estado2);
 
-    printf("Digite um código para a carta (exemplo: 01,12,33...): ");
+    printf("Digite um código para carta entre 01 a 04: ");
     scanf("%s", codigo_carta2);
 
     printf("Digite o nome da cidade: ");
