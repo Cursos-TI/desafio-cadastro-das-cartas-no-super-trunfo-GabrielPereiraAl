@@ -3,25 +3,29 @@
 int main() {
     // Variáveis da primeira cidade
     char estado1;
-    char codigo_carta1[3];
+    char codigo_carta1[4];
     char nome_cidade1[30];
-    int populacao1;
+    unsigned long int populacao1;
     float area1;
     float densidade_pop1;
     float pib1;
     float pib_per_capital1;
     int pontos_turisticos1;
+    float super_poder1;
 
     // Variáveis da segunda cidade
     char estado2;
-    char codigo_carta2[3];
+    char codigo_carta2[4];
     char nome_cidade2[30];
-    int populacao2;
+    unsigned long int populacao2;
     float area2;
     float densidade_pop2;
     float pib2;
     float pib_per_capital2;
     int pontos_turisticos2;
+    float super_poder2;
+
+    //Cadastrando as cartas do jogo
 
     // Cadastro da carta 1
     printf("\n++++ Olá, bem-vindo ao Super Trunfo! ++++\n\nCadastre a primeira carta.\n\n");
@@ -33,10 +37,10 @@ int main() {
     scanf("%s", codigo_carta1);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", nome_cidade1);
+    scanf(" %29[^\n]", nome_cidade1);
 
     printf("Digite a população da cidade: ");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Digite o tamanho da área da cidade (em km²): ");
     scanf("%f", &area1);
@@ -60,7 +64,7 @@ int main() {
     printf("Estado: %c\n", estado1);
     printf("Código: %c%s\n", estado1, codigo_carta1);
     printf("Nome da cidade: %s\n", nome_cidade1);
-    printf("População: %d\n", populacao1);
+    printf("População: %lu\n", populacao1);
     printf("Área: %.2f km²\n", area1); 
     printf("PIB: R$ %.2f bilhões\n", pib1);
     printf("Pontos turísticos: %d\n", pontos_turisticos1);
@@ -78,10 +82,10 @@ int main() {
     scanf("%s", codigo_carta2);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", nome_cidade2);
+    scanf(" %29[^\n]", nome_cidade2);
 
     printf("Digite a população da cidade: ");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Digite o tamanho da área da cidade (em km²): ");
     scanf("%f", &area2);
@@ -105,13 +109,28 @@ int main() {
     printf("Estado: %c\n", estado2);
     printf("Código: %c%s\n", estado2, codigo_carta2);
     printf("Nome da cidade: %s\n", nome_cidade2);
-    printf("População: %d\n", populacao2);
+    printf("População: %lu\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: R$ %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pontos_turisticos2);
     printf("Densidade populacional: %.2f hab/km² \n", densidade_pop2);
-    printf("PIP per capital: R$ %.2f \n", pib_per_capital2);
+    printf("PIP per capita: R$ %.2f \n", pib_per_capital2);
     printf("=================================================\n");
+
+
+    // Calculando o SUPER Poder
+
+
+    //Para melhor apresentação das comparações, optei por mostrar em formato de "placa"
+
+    printf("===================== PLACA FINAL =====================\n\n");
+    printf("População: Carta1  (%d)x(%d)  Carta2\n", populacao1>populacao2, populacao2>populacao1); // Maior populaçao
+    printf("(%d)x(%d)\n");//Maior área
+    printf("(%d)x(%d)\n");//Maior PIP
+    printf("(%d)x(%d)\n");//Mais pontos turisticos
+    printf("(%d)x(%d)\n");//Menor densidade populacional
+    printf("(%d)x(%d)\n");//Maior PIP per capita
+    printf("(%d)x(%d)\n");//Super Poder
 
     return 0;
 }
