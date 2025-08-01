@@ -33,7 +33,7 @@ int main() {
     printf("Digite uma letra entre A e H para representar o estado da cidade: ");
     scanf(" %c", &estado1);
 
-    printf("Código (entre 01 e 04): ");
+    printf("Digite o código da carta (ex: 01): ");
     scanf("%s", codigo_carta1);
 
     printf("Digite o nome da cidade: ");
@@ -81,7 +81,7 @@ int main() {
     printf("Digite uma letra entre A e H para representar o estado da cidade: ");
     scanf(" %c", &estado2);
 
-    printf("Código (entre 01 e 04): ");
+    printf("Digite o código da carta (ex: 01): ");
     scanf("%s", codigo_carta2);
 
     printf("Digite o nome da cidade: ");
@@ -125,7 +125,7 @@ int main() {
 
     printf("\n\n===================== Resultado =====================\n\n");
 
-    printf("Se o resultado for 1 Carta1 vence, ser for 0, Carta2 vence\n\n");
+    printf("Resultado da comparação (1 para Carta 1, 0 para Carta 2 ou Empate):\n\n");
     printf("População: %d\n",populacao1>populacao2);
     printf("Área: %d\n",area1>area2);
     printf("PIP: %d\n",pib1>pib2);
