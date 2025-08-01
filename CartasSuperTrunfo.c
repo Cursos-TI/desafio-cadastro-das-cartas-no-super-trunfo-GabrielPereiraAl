@@ -9,7 +9,7 @@ int main() {
     float area1;
     float densidade_pop1;
     float pib1;
-    float pib_per_capital1;
+    float pib_per_capita1;
     int pontos_turisticos1;
     float super_poder1;
 
@@ -21,7 +21,7 @@ int main() {
     float area2;
     float densidade_pop2;
     float pib2;
-    float pib_per_capital2;
+    float pib_per_capita2;
     int pontos_turisticos2;
     float super_poder2;
 
@@ -56,7 +56,7 @@ int main() {
     //Para a densidade populacional, é calculado (População / área)
     densidade_pop1 = (float) (populacao1 / area1 );
     //Para mostrar o PIP per capital, é feito calculo (PIP / população x 1bilhão)
-    pib_per_capital1 = (float) (pib1 / populacao1 * 1000000000);
+    pib_per_capita1 = (float) (pib1 / populacao1 * 1000000000);
 
 
     // Apresentação dos dados da carta 1
@@ -69,7 +69,7 @@ int main() {
     printf("PIB: R$ %.2f bilhões\n", pib1);
     printf("Pontos turísticos: %d\n", pontos_turisticos1);
     printf("Densidade populacional: %.2f hab/km² \n", densidade_pop1);
-    printf("PIP per capital: R$ %.2f \n", pib_per_capital1);
+    printf("PIP per capital: R$ %.2f \n", pib_per_capita1);
     printf("=================================================");
 
     // Cadastro da carta 2
@@ -101,7 +101,7 @@ int main() {
     //Para a densidade populacional, é calculado (População / área)
     densidade_pop2 = (float) (populacao2 / area2 );
     //Para mostrar o PIP per capital, é feito calculo (PIP / população x 1bilhão)
-    pib_per_capital2 = (float) (pib2 / populacao2 * 1000000000);
+    pib_per_capita2 = (float) (pib2 / populacao2 * 1000000000);
 
 
     // Apresentação dos dados da carta 2
@@ -114,7 +114,7 @@ int main() {
     printf("PIB: R$ %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pontos_turisticos2);
     printf("Densidade populacional: %.2f hab/km² \n", densidade_pop2);
-    printf("PIP per capita: R$ %.2f \n", pib_per_capital2);
+    printf("PIP per capita: R$ %.2f \n", pib_per_capita2);
     printf("=================================================\n");
 
 
